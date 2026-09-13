@@ -35,7 +35,7 @@ const JA_NAV_ITEMS = [
   { id: 'benchmarks', ja: '推論ベンチマーク', en: 'Benchmarks', icon: Zap, badge: '高速化' },
   { id: 'interactive-tools', ja: '体験デモツール', en: 'Live Tools', icon: Cpu, badge: '実演' },
   { id: 'experience', ja: '職歴・研究論文', en: 'Experience', icon: Briefcase, badge: 'ICAETA' },
-  { id: 'achievement-slider', ja: '表彰スライダー', en: 'Slides', icon: Award, badge: '8枚' },
+  { id: 'achievement-slider', ja: '画像ギャラリー', en: 'Gallery', icon: Award, badge: '8枚' },
   { id: 'credentials', ja: '表彰・取得資格', en: 'Credentials', icon: ShieldCheck, badge: 'GPA 3.76' },
   { id: 'opensource', ja: 'オープンソース', en: 'Open Source', icon: GitFork, badge: 'HuggingFace' },
   { id: 'contact', ja: 'お問い合わせ', en: 'Contact', icon: Mail, badge: '連絡先' },
