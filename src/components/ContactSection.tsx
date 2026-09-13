@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, GitFork, Link2, Send, CheckCircle2, Copy, Check } from 'lucide-react';
+import { Mail, GitFork, Link2, Send, CheckCircle2, Copy, Check, FileText, ExternalLink } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { JA_PERSONAL_INFO } from '../data/japaneseN3Data';
 
@@ -71,6 +71,23 @@ export const ContactSection: React.FC = () => {
                 <p className="text-slate-300">
                   日本語能力試験 (JLPT N3) を取得しており、仕様書の読解、技術ドキュメントの作成、日常的な業務連絡を日本語で行うことができます。
                 </p>
+              </div>
+
+              {/* CV / Resume Direct PDF Link */}
+              <div className="mt-4 p-3 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <FileText className="w-4 h-4 text-rose-400" />
+                  <span className="text-xs font-mono text-slate-200">履歴書・職務経歴書 (PDF)</span>
+                </div>
+                <a
+                  href="/nhatranvan_ai_engineer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm shadow-rose-500/20"
+                >
+                  <span>PDFを開く</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             </div>
 

@@ -60,84 +60,6 @@ export const SLIDE_DATA: SlideItem[] = [
     organization: 'ハノイ工業大学（Hanoi University of Industry）'
   },
   {
-    id: 'slide_bar_1',
-    filename: 'slide_bar_1.webp',
-    category: 'valedictorian_awards',
-    titleJa: '卒業式 首席表彰 & AIイノベーションコンテスト受賞コレクション',
-    titleVi: 'Lễ tốt nghiệp Thủ khoa HaUI 2026 & Bộ giải thưởng Đổi mới Sáng tạo AI',
-    titleEn: 'Graduation Valedictorian & AI Innovation Competition Awards',
-    date: '2025 - 2026',
-    badgeJa: 'コンテスト銀賞・首席',
-    badgeVi: 'Giải Nhì AI & Thủ khoa',
-    highlightsJa: [
-      '2026年卒業式ステージ: コンピュータサイエンス学科首席卒業（GPA 3.76）公式記念',
-      'Digital Era Creative Innovation 2026 コンテスト 第2位（プロジェクト: OASM - 攻撃対象領域管理）',
-      'IT Festival AI Horizon: AIスタートアップ・アイディアコンテスト 第2位（チーム: GoUp）',
-      'サムスン・イノベーション・キャンパス（Samsung Innovation Campus）: 人工知能AIコース修了証',
-      '国際プログラミング検定TOFAS（SPRIX日本主催）: 銀メダル（Silver Medal）'
-    ],
-    highlightsVi: [
-      'Lễ tốt nghiệp 2026: Thủ khoa đầu ra ngành Khoa học Máy tính HaUI (GPA 3.76/4.0)',
-      'Giải Nhì Cuộc thi "Digital Era Creative Innovation 2026" (Dự án OASM)',
-      'Giải Nhì Cuộc thi Ý tưởng Khởi nghiệp AI - START (IT Festival AI Horizon 2025)',
-      'Chứng chỉ Samsung Innovation Campus: Khóa học Trí tuệ nhân tạo (Samsung Vietnam Complex)',
-      'Huy chương Bạc Cuộc thi Lập trình Quốc tế TOFAS (SPRIX Vietnam)'
-    ],
-    organization: 'HaUI, Samsung, SPRIX Japan'
-  },
-  {
-    id: 'slide_bar_2',
-    filename: 'slide_bar_2.webp',
-    category: 'valedictorian_awards',
-    titleJa: '第17期 首席表彰 & AI-ASISTANT データ処理コンテスト第1位',
-    titleVi: 'Vinh danh Thủ khoa K17 & Giải Nhất Cuộc thi Khai thác Dữ liệu AI-ASISTANT',
-    titleEn: 'Valedictorian Recognition & AI-ASISTANT Data Mining 1st Prize',
-    date: '2024 - 2025',
-    badgeJa: 'コンテスト最優秀賞',
-    badgeVi: 'Giải Nhất AI-ASISTANT',
-    highlightsJa: [
-      'ハノイ工業大学情報通信技術学部: 第17期 コンピュータサイエンス学科 首席公式表彰パネル',
-      'IT Festival AI Horizon: AIデータ処理・マイニングコンテスト 第1位（チーム: Flop）',
-      'IT Festival 2025: I-POF 英語・技術プレゼンテーションコンテスト 第1位（チーム: Bưng lụa）',
-      '全国学生連合「5つの美徳を持つ優秀学生 (Student with 5 Good Merits)」2年連続認定',
-      'DEVPRO: Java Web Fullstack エンジニアリング修了証'
-    ],
-    highlightsVi: [
-      'Bảng vinh danh Thủ khoa ngành Khoa học Máy tính Khóa 17 (Trường CNTT&TT HaUI)',
-      'Giải Nhất Cuộc thi Xử lý & Khai thác Dữ liệu AI - ASISTANT (Đội thi Flop)',
-      'Giải Nhất Cuộc thi Hùng biện I-POF IT Festival 2025 (Đội thi Bưng lụa)',
-      'Danh hiệu "Sinh viên 5 tốt" cấp trường 2 năm liên tiếp (2023-2024 & 2024-2025)',
-      'Chứng chỉ hoàn thành khóa học Java Web Fullstack - DEVPRO'
-    ],
-    organization: 'Trường CNTT&TT HaUI, Hội Sinh viên'
-  },
-  {
-    id: 'slide_bar_4',
-    filename: 'slide_bar_4.webp',
-    category: 'research_international',
-    titleJa: '学生学術研究最優秀賞 & SPRIX日本代表よりTOFAS銀メダル授与',
-    titleVi: 'Giải Nhất Nghiên cứu Khoa học & Vinh danh TOFAS cùng TGĐ SPRIX Nhật Bản',
-    titleEn: 'Student Scientific Research 1st Prize & TOFAS Silver Medal by SPRIX Japan',
-    date: '2024 - 2026',
-    badgeJa: '学術研究第1位 & 国際学会',
-    badgeVi: 'Giải Nhất NCKH & ICAETA',
-    highlightsJa: [
-      'ハノイ工業大学 2025-2026年度 学生学術研究コンテスト: 最優秀賞（第1位）表彰状',
-      'ハノイ工業大学 2024-2025年度 学生学術研究コンテスト: 第2位 表彰状',
-      'SPRIXベトナム社長 Yusuke Homma 氏より 国際プログラミングTOFAS銀メダル直接授与',
-      '第10回国際工学学会 ICAETA 2025 論文発表: "A hybrid Two-Stage Heterogeneous-Data IDS Framework for IoT Networks Using LightGBM and EfficientNetB7"',
-      'ハノイ学生健康ランニング2024（HaNoi Student Running）完走「健康学生」達成'
-    ],
-    highlightsVi: [
-      'Giấy khen Giám đốc ĐHCNHN: Đạt Giải Nhất Sinh viên Nghiên cứu Khoa học năm học 2025-2026',
-      'Giấy khen Đạt Giải Nhì Sinh viên Nghiên cứu Khoa học năm học 2024-2025',
-      'Nhận Huy chương Bạc TOFAS và chụp ảnh cùng ông Yusuke Homma (Tổng Giám đốc SPRIX Việt Nam)',
-      'Báo cáo tại Hội nghị Quốc tế ICAETA 2025 (Đại học Tôn Đức Thắng, TP. Hồ Chí Minh)',
-      'Giấy chứng nhận hoàn thành giải chạy HaNoi Student Running (Tiêu chí "Sinh viên khỏe")'
-    ],
-    organization: 'ĐH Công nghiệp Hà Nội, SPRIX Japan, TDTU'
-  },
-  {
     id: 'new_sl1',
     filename: 'new_sl1.webp',
     category: 'research_international',
@@ -210,82 +132,6 @@ export const SLIDE_DATA: SlideItem[] = [
     organization: 'Kaggle (Google)'
   },
   {
-    id: 'slide_bar_3',
-    filename: 'slide_bar_3.webp',
-    category: 'academic_excellence',
-    titleJa: '学内最高位 優秀学生表彰・大学数学オリンピック第2位・郷土奨学金',
-    titleVi: 'Danh hiệu Sinh viên Xuất sắc, Giải Nhì Olympic Toán học HaUI & Khuyến học Quê hương',
-    titleEn: 'Academic Excellence, HaUI Mathematics Olympiad 2nd Prize & Hometown Scholarship',
-    date: '2023 - 2025',
-    badgeJa: '数学五輪第2位・優秀生',
-    badgeVi: 'Olympic Toán & SV Xuất sắc',
-    highlightsJa: [
-      'ハノイ工業大学 2024-2025年度 優秀学生表彰（Danh hiệu Sinh viên Xuất sắc）',
-      'ハノイ工業大学 2023年度 学内数学オリンピックコンテスト: 第2位（Giải Nhì Olympic Toán học）',
-      'タンファン文化村 奨学基金会（Ban Khuyến học Làng Văn hóa Thanh Phần）: 優秀学生表彰状',
-      '全学学生会執行部: 優秀学生5徳「Sinh viên 5 tốt」2024-2025年度表彰状',
-      'ハノイ工業大学公式「新学士・学科首席表彰」記念パネル'
-    ],
-    highlightsVi: [
-      'Giấy khen Hiệu trưởng: Đạt danh hiệu Sinh viên Xuất sắc năm học 2024-2025',
-      'Giấy khen Hiệu trưởng: Đạt Giải Nhì Olympic Toán học cấp trường năm 2023',
-      'Giấy khen Ban Khuyến học Làng văn hóa Thanh Phần: Thành tích sinh viên Xuất sắc',
-      'Giấy khen Ban Chấp hành Hội Sinh viên Trường: Đạt danh hiệu "Sinh viên 5 tốt" năm học 2024-2025',
-      'Khung vinh danh Tân Cử nhân - Thủ khoa Trần Văn Nhã ngành Khoa học Máy tính'
-    ],
-    organization: 'ĐH Công nghiệp Hà Nội, Ban Khuyến học'
-  },
-  {
-    id: 'slide_bar_5',
-    filename: 'slide_bar_5.webp',
-    category: 'community_social',
-    titleJa: '社会貢献・青少年教育ボランティア管理者表彰 & 支援マラソン完走',
-    titleVi: 'Cống hiến Xã hội: Quản lý Lớp học Cầu vồng & Chạy bộ vì trẻ em nghèo',
-    titleEn: 'Social Contribution: Rainbow Class Education Manager & Charity Marathon',
-    date: '2024 - 2025',
-    badgeJa: '教育支援・健康長距離走',
-    badgeVi: 'Thiện nguyện & Marathon',
-    highlightsJa: [
-      'The Rainbow Class（ベトナム青少年ボランティア連盟所属）: Han Gan クラス管理者（Class Manager）特別感謝状',
-      'The Rainbow Class: 2024年5月〜2025年10月 積極的ボランティア参加証書',
-      'iRace Run For Education: 120.29km 完走証（タイム 11:11:54, ペース 5:35, 全体49位）',
-      'FOBIC奨学基金: ライチャウ省児童支援チャリティーラン 433km完走（教科書7,950冊・自転車9台寄贈）',
-      'チュクラム・スンフック禅院における仏教青年・地域支援ボランティア活動'
-    ],
-    highlightsVi: [
-      'Volunteer Appreciation Certificate: Quản lý Lớp học Han Gan (The Rainbow Class, 8/2024 - 12/2025)',
-      'Certificate of Participation: Tình nguyện viên tích cực The Rainbow Class (5/2024 - 10/2025)',
-      'Hoàn thành 120.29 km Giải chạy Chạy vì Giáo dục (Pace 5:35, Ranking 49)',
-      'Vinh danh Quỹ Khuyến học FOBIC: Đóng góp 433 km "Chạy vì học sinh Lai Châu"',
-      'Hoạt động thiện nguyện phụng sự cộng đồng tại Thiền viện Trúc Lâm Sùng Phúc'
-    ],
-    organization: 'The Rainbow Class, iRace, FOBIC Foundation'
-  },
-  {
-    id: 'new_sl4',
-    filename: 'new_sl4.webp',
-    category: 'community_social',
-    titleJa: '地域教育支援ボランティア & 433km ライチャウ省児童支援マラソン',
-    titleVi: 'Hành trình Thiện nguyện Lớp học Cầu Vồng & 433km Tiếp sức Học sinh Lai Châu',
-    titleEn: 'Community Engagement: The Rainbow Class & 433km Charity Run for Children',
-    date: '2024 - 2025',
-    badgeJa: '社会貢献活動',
-    badgeVi: 'Cống hiến vì Cộng đồng',
-    highlightsJa: [
-      '恵まれない児童のための無料教育プログラム「The Rainbow Class」リーダーシップ',
-      'ライチャウ省山岳地帯の生徒へ教科書と自転車を届ける433kmランニングプロジェクト',
-      '社会貢献・チームワーク・リーダーシップ・健康管理の実践証明',
-      '青年ボランティア隊員集合写真（ハノイ工業大学）'
-    ],
-    highlightsVi: [
-      'Bằng khen quản lý lớp học tình nguyện dạy học cho trẻ em có hoàn cảnh khó khăn',
-      'Hoàn thành 433 km đóng góp vào chương trình trao 7.950 cuốn sách và 9 xe đạp tới học sinh Lai Châu',
-      'Minh chứng rõ nét cho tinh thần trách nhiệm xã hội, khả năng lãnh đạo đội ngũ và sức khỏe dẻo dai',
-      'Hình ảnh thanh niên tình nguyện áo xanh trường ĐH Công nghiệp Hà Nội'
-    ],
-    organization: 'The Rainbow Class, Quỹ FOBIC'
-  },
-  {
     id: 'slide_bar_6',
     filename: 'slide_bar_6.webp',
     category: 'valedictorian_awards',
@@ -356,6 +202,30 @@ export const SLIDE_DATA: SlideItem[] = [
       'Giấy khen Ban chấp hành Hội Sinh viên trường'
     ],
     organization: 'ĐH Công nghiệp Hà Nội'
+  },
+  {
+    id: 'new_sl4',
+    filename: 'new_sl4.webp',
+    category: 'community_social',
+    titleJa: '地域教育支援ボランティア & 433km ライチャウ省児童支援マラソン',
+    titleVi: 'Hành trình Thiện nguyện Lớp học Cầu Vồng & 433km Tiếp sức Học sinh Lai Châu',
+    titleEn: 'Community Engagement: The Rainbow Class & 433km Charity Run for Children',
+    date: '2024 - 2025',
+    badgeJa: '社会貢献活動',
+    badgeVi: 'Cống hiến vì Cộng đồng',
+    highlightsJa: [
+      '恵まれない児童のための無料教育プログラム「The Rainbow Class」リーダーシップ',
+      'ライチャウ省山岳地帯の生徒へ教科書と自転車を届ける433kmランニングプロジェクト',
+      '社会貢献・チームワーク・リーダーシップ・健康管理の実践証明',
+      '青年ボランティア隊員集合写真（ハノイ工業大学）'
+    ],
+    highlightsVi: [
+      'Bằng khen quản lý lớp học tình nguyện dạy học cho trẻ em có hoàn cảnh khó khăn',
+      'Hoàn thành 433 km đóng góp vào chương trình trao 7.950 cuốn sách và 9 xe đạp tới học sinh Lai Châu',
+      'Minh chứng rõ nét cho tinh thần trách nhiệm xã hội, khả năng lãnh đạo đội ngũ và sức khỏe dẻo dai',
+      'Hình ảnh thanh niên tình nguyện áo xanh trường ĐH Công nghiệp Hà Nội'
+    ],
+    organization: 'The Rainbow Class, Quỹ FOBIC'
   }
 ];
 
@@ -448,15 +318,15 @@ export const AchievementSlidebar: React.FC<AchievementSlidebarProps> = ({ lang =
     if (customImages[baseName]) return customImages[baseName];
     if (customImages[slide.id]) return customImages[slide.id];
     // 2. Direct public folder path
-    return `/${slide.filename}`;
+    return `/imgs/${slide.filename}`;
   };
 
   const categories = [
     { id: 'all', ja: 'すべて表示', vi: 'Tất cả', count: SLIDE_DATA.length },
-    { id: 'valedictorian', ja: '首席・公式証書', vi: 'Thủ khoa & Bằng cấp', count: 5 },
-    { id: 'research', ja: '学術研究・五輪', vi: 'NCKH & Olympic', count: 4 },
+    { id: 'valedictorian', ja: '首席・公式証書', vi: 'Thủ khoa & Bằng cấp', count: 3 },
+    { id: 'research', ja: '学術研究・五輪', vi: 'NCKH & Olympic', count: 2 },
     { id: 'certifications', ja: 'Coursera & Kaggle', vi: 'Chứng chỉ Quốc tế', count: 2 },
-    { id: 'community', ja: '社会貢献・健康', vi: 'Cộng đồng & Marathon', count: 2 },
+    { id: 'community', ja: '社会貢献・健康', vi: 'Cộng đồng & Marathon', count: 1 },
   ];
 
   return (
@@ -479,10 +349,10 @@ export const AchievementSlidebar: React.FC<AchievementSlidebarProps> = ({ lang =
             <Trophy className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
             <span>
               {lang === 'ja'
-                ? '公式表彰状・学術証明スライダー (13点コレクション)'
+                ? '公式表彰状・学術証明スライダー (8点コレクション)'
                 : lang === 'vi'
-                ? 'Thanh trượt Hồ sơ & Bằng khen Minh chứng (13 Slide)'
-                : 'Official Achievement & Certificate Slidebar (13 Slides)'}
+                ? 'Thanh trượt Hồ sơ & Bằng khen Minh chứng (8 Slide)'
+                : 'Official Achievement & Certificate Slidebar (8 Slides)'}
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-100 tracking-tight flex items-center gap-2.5">
@@ -738,16 +608,12 @@ export const AchievementSlidebar: React.FC<AchievementSlidebarProps> = ({ lang =
                       : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-800/60 opacity-75 hover:opacity-100'
                   }`}
                 >
-                  <div className="w-12 h-8 rounded-lg bg-slate-950 overflow-hidden shrink-0 border border-slate-800 flex items-center justify-center">
+                  <div className="w-12 h-8 rounded-lg bg-slate-950 overflow-hidden shrink-0 border border-slate-800 flex items-center justify-center relative">
                     <img
                       src={getSlideImageUrl(slide)}
                       alt={slide.filename}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        (e.target as HTMLElement).style.display = 'none';
-                      }}
                     />
-                    <Award className="w-3 h-3 text-amber-400 absolute" />
                   </div>
                   <div className="pr-2">
                     <div className="text-[11px] font-mono font-bold text-slate-200 truncate max-w-[140px]">

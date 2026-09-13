@@ -14,7 +14,8 @@ import {
   Trophy,
   Mic,
   Activity,
-  Globe
+  Globe,
+  FileText
 } from 'lucide-react';
 import { Sidebar } from './components/Sidebar';
 import { ProjectCard } from './components/ProjectCard';
@@ -189,21 +190,47 @@ export default function App() {
           {/* 1. OVERVIEW / HERO SECTION (Japanese N3 style, concise & high impact)     */}
           {/* ========================================================================= */}
           <section id="overview" className="scroll-mt-24 space-y-6">
-            {/* Japanese Valedictorian & JLPT Badges */}
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-xs font-mono text-amber-300">
-                <Trophy className="w-3.5 h-3.5 text-amber-400" />
-                <span>ハノイ工業大学（HaUI）首席卒業（GPA 3.76 / 4.0）</span>
+            {/* Main Avatar & Profile Intro Header */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 pb-2">
+              {/* Main Avatar (Circular) */}
+              <div className="relative shrink-0 group">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-tr from-rose-500 via-purple-500 to-indigo-600 shadow-2xl shadow-rose-500/30 transition-transform duration-300 group-hover:scale-105">
+                  <img
+                    src="/main_avatar.jpeg"
+                    alt="Trần Văn Nhã - AI Systems Engineer"
+                    className="w-full h-full rounded-full object-cover shadow-inner"
+                  />
+                </div>
+                <span
+                  className="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-emerald-500 border-2 border-slate-950 flex items-center justify-center shadow-lg"
+                  title="Actively Available for AI / MLOps Roles"
+                >
+                  <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white animate-pulse" />
+                </span>
               </div>
 
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-xs font-mono text-rose-300">
-                <span className="text-xs">🌸</span>
-                <span>日本語能力試験 (JLPT N3) • 日本国内勤務対応可能</span>
-              </div>
+              {/* Japanese Valedictorian & JLPT Badges */}
+              <div className="flex-1 min-w-0 space-y-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-xs font-mono text-amber-300">
+                    <Trophy className="w-3.5 h-3.5 text-amber-400" />
+                    <span>ハノイ工業大学（HaUI）首席卒業（GPA 3.76 / 4.0）</span>
+                  </div>
 
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-300">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>正社員・開発ポジション積極応募中</span>
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-xs font-mono text-rose-300">
+                    <span className="text-xs">🌸</span>
+                    <span>日本語能力試験 (JLPT N3) • 日本国内勤務対応可能</span>
+                  </div>
+
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>正社員・開発ポジション積極応募中</span>
+                  </div>
+                </div>
+
+                <p className="text-xs font-mono text-slate-400">
+                  チャン・ヴァン・ニャー • Trần Văn Nhã • @vannha2004
+                </p>
               </div>
             </div>
 
@@ -225,9 +252,20 @@ export default function App() {
 
             {/* Direct Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
+              <a
+                href="/nhatranvan_ai_engineer.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-rose-500/25 transition-all flex items-center gap-2 hover:scale-[1.02]"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>{lang === 'ja' ? '履歴書・職務経歴書 (PDF)' : lang === 'vi' ? 'Xem / Tải CV (PDF)' : 'Download / View CV'}</span>
+                <ExternalLink className="w-3 h-3 opacity-80" />
+              </a>
+
               <button
                 onClick={() => handleNavigate('projects')}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white font-bold text-xs shadow-lg shadow-rose-500/25 transition-all flex items-center gap-2"
+                className="px-5 py-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-slate-200 hover:text-white font-bold text-xs transition-colors flex items-center gap-2"
               >
                 <span>開発実績（STAR形式）を見る</span>
                 <ArrowRight className="w-3.5 h-3.5" />

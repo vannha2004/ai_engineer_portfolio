@@ -18,7 +18,9 @@ export const PERSONAL_INFO = {
     text: 'Actively Interviewing for AI / MLOps Engineer Roles',
     level: 'Senior / Specialist'
   },
-  valedictorianBadge: 'Thủ Khoa CS K17 • GPA 3.76/4.0'
+  valedictorianBadge: 'Thủ Khoa CS K17 • GPA 3.76/4.0',
+  avatarUrl: '/main_avatar.jpeg',
+  resumeUrl: '/nhatranvan_ai_engineer.pdf'
 };
 
 export const QUICK_METRICS = [

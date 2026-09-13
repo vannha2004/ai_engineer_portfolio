@@ -14,7 +14,8 @@ import {
   ChevronRight,
   ShieldCheck,
   Menu,
-  X
+  X,
+  ExternalLink
 } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { JA_PERSONAL_INFO } from '../data/japaneseN3Data';
@@ -34,7 +35,7 @@ const JA_NAV_ITEMS = [
   { id: 'benchmarks', ja: '推論ベンチマーク', en: 'Benchmarks', icon: Zap, badge: '高速化' },
   { id: 'interactive-tools', ja: '体験デモツール', en: 'Live Tools', icon: Cpu, badge: '実演' },
   { id: 'experience', ja: '職歴・研究論文', en: 'Experience', icon: Briefcase, badge: 'ICAETA' },
-  { id: 'achievement-slider', ja: '表彰スライダー', en: 'Slides', icon: Award, badge: '13点' },
+  { id: 'achievement-slider', ja: '表彰スライダー', en: 'Slides', icon: Award, badge: '8枚' },
   { id: 'credentials', ja: '表彰・取得資格', en: 'Credentials', icon: ShieldCheck, badge: 'GPA 3.76' },
   { id: 'opensource', ja: 'オープンソース', en: 'Open Source', icon: GitFork, badge: 'HuggingFace' },
   { id: 'contact', ja: 'お問い合わせ', en: 'Contact', icon: Mail, badge: '連絡先' },
@@ -59,16 +60,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Top Profile Summary Header */}
       <div>
         <div className="flex items-start gap-3.5 pb-4 border-b border-slate-800/80">
-          {/* Avatar with Sakura Accent and Online Indicator */}
+          {/* Circular Main Avatar with Sakura Gradient & Online Indicator */}
           <div className="relative shrink-0">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500 via-purple-600 to-indigo-700 p-0.5 shadow-lg shadow-rose-500/20">
-              <div className="w-full h-full rounded-[14px] bg-slate-950 flex items-center justify-center overflow-hidden font-mono font-bold text-lg text-rose-300">
-                <span>VN</span>
-              </div>
+            <div className="w-14 h-14 rounded-full p-0.5 bg-gradient-to-tr from-rose-500 via-purple-500 to-indigo-600 shadow-lg shadow-rose-500/25">
+              <img
+                src="/main_avatar.jpeg"
+                alt="Trần Văn Nhã"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
             <span
-              className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-slate-950 flex items-center justify-center"
-              title="日本での勤務・リモート対応可能"
+              className="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-emerald-500 border-2 border-slate-950 flex items-center justify-center shadow"
+              title="日本での勤務・リモート対応可能 / Sẵn sàng làm việc"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
             </span>
@@ -159,11 +162,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="pt-3 border-t border-slate-800/80 space-y-3">
         {/* CV Download / View Button */}
         <a
-          href={`mailto:${PERSONAL_INFO.email}?subject=【採用面談】AIエンジニア採用について（履歴書請求）&body=チャン・ヴァン・ニャー様%0D%0A%0D%0Aポートフォリオを拝見し、経歴書・職務経歴書の送付をお願いしたくご連絡いたしました。`}
-          className="w-full flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white text-xs font-bold shadow-md shadow-rose-500/20 transition-all"
+          href="/nhatranvan_ai_engineer.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 to-indigo-600 hover:from-rose-500 hover:to-indigo-500 text-white text-xs font-bold shadow-md shadow-rose-500/20 transition-all hover:scale-[1.01]"
         >
           <FileText className="w-3.5 h-3.5" />
-          <span>履歴書・職務経歴書を請求</span>
+          <span>{lang === 'ja' ? '履歴書・職務経歴書 (PDF)' : lang === 'vi' ? 'Xem CV / Hồ sơ (PDF)' : 'View Resume / CV (PDF)'}</span>
+          <ExternalLink className="w-3 h-3 opacity-70" />
         </a>
 
         {/* CLI Terminal Launcher */}
@@ -230,8 +236,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Mobile Top Header Bar */}
       <header className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-slate-950/95 backdrop-blur-md border-b border-slate-800/80 z-50 flex items-center justify-between px-4">
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-rose-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xs shrink-0">
-            VN
+          <div className="w-9 h-9 rounded-full p-0.5 bg-gradient-to-tr from-rose-500 to-indigo-600 shrink-0">
+            <img
+              src="/main_avatar.jpeg"
+              alt="Trần Văn Nhã"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           <div className="min-w-0">
             <p className="text-sm font-bold text-slate-100 truncate">

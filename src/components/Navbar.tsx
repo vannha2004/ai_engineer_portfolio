@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Terminal, Cpu, Sparkles, FolderGit2, BookOpen, Mail, GitFork, Link2 } from 'lucide-react';
+import { Terminal, Cpu, Sparkles, FolderGit2, BookOpen, Mail, GitFork, Link2, FileText } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface NavbarProps {
@@ -43,8 +43,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenTerminal, activeSection })
           href="#"
           className="flex items-center gap-2.5 text-slate-100 group focus:outline-none"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-mono font-bold text-white shadow-sm shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-shadow">
-            AI
+          <div className="w-8 h-8 rounded-full p-0.5 bg-gradient-to-tr from-rose-500 to-indigo-600 shrink-0 shadow-sm shadow-rose-500/20">
+            <img
+              src="/main_avatar.jpeg"
+              alt={PERSONAL_INFO.name}
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-semibold text-sm sm:text-base tracking-tight text-slate-100 flex items-center gap-1.5">
@@ -80,6 +84,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenTerminal, activeSection })
 
         {/* Action Buttons: Terminal & Socials */}
         <div className="flex items-center gap-2 sm:gap-3">
+          <a
+            id="nav-cv-btn"
+            href="/nhatranvan_ai_engineer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/30 text-xs font-mono text-rose-300 transition-colors shadow-sm"
+            title="Download / View Resume CV (PDF)"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">CV (PDF)</span>
+          </a>
+
           <button
             id="open-terminal-btn"
             onClick={onOpenTerminal}

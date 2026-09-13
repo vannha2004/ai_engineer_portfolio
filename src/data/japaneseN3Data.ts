@@ -16,7 +16,9 @@ export const JA_PERSONAL_INFO = {
   linkedin: 'https://www.linkedin.com/in/vannha2004',
   huggingface: 'https://huggingface.co/vannha2004',
   shortBio: 'ハノイ工業大学のコンピュータサイエンス学科を首席（GPA 3.76/4.0）で卒業しました。深層学習を用いた音声認識・話者照合や、ONNX・TensorRTによる推論の高速化、低遅延な本番APIパイプラインの構築が得意です。研究成果を実際のビジネス環境で高速かつ安定して動かすエンジニアリングに強みがあります。',
-  japaneseSkill: '日本語能力試験 (JLPT N3) • 日本のIT企業での開発業務に対応可能'
+  japaneseSkill: '日本語能力試験 (JLPT N3) • 日本のIT企業での開発業務に対応可能',
+  avatarUrl: '/main_avatar.jpeg',
+  resumeUrl: '/nhatranvan_ai_engineer.pdf'
 };
 
 export const JA_METRICS = [
