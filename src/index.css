@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #030712;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f43f5e;
+}
+
+/* Japanese Sakura & Wa-Modern animations */
+@keyframes sakura-fall {
+  0% {
+    transform: translate(0, -10px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(40px, 45vh) rotate(180deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-30px, 95vh) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+.sakura-petal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 12px 1px 12px 1px;
+  background: linear-gradient(135deg, rgba(254, 205, 211, 0.7), rgba(244, 114, 182, 0.4));
+  box-shadow: 0 0 6px rgba(244, 114, 182, 0.3);
+  animation: sakura-fall linear infinite;
+}

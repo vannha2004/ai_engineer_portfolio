@@ -1,0 +1,6 @@
+{
+  "name": "Trần Văn Nhã | AIエンジニア ポートフォリオ",
+  "description": "ハノイ工業大学首席卒業（GPA 3.76）。音声認識AI（ECAPA-TDNN）、推論高速化（ONNX Runtime, TensorRT）、低遅延APIパイプラインを専門とするAIエンジニアの和風ポートフォリオ（日本語N3対応）。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
